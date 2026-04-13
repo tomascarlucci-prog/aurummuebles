@@ -317,3 +317,35 @@ footer {
 .item-producto {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+/* AJUSTES PARA CELULARES */
+@media (max-width: 768px) {
+    /* Menú: para que no se encime, lo ponemos en dos filas o vertical */
+    nav ul {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Achicamos un pelín la letra para que entre mejor */
+        padding: 5px 8px;
+    }
+
+    /* Slider: Ajuste para que las fotos no se deformen en el celu */
+    .hero {
+        height: 40vh; /* Altura más corta para pantallas chicas */
+        min-height: 250px;
+    }
+
+    .slide img {
+        object-fit: cover; /* Recorta la imagen para que llene el espacio sin estirarse */
+        height: 100%;
+    }
+
+    /* Título principal */
+    .hero-content h1 {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+    
