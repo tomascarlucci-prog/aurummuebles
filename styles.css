@@ -1,0 +1,237 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --gris: #1a1a1a;
+    --texto-gris: #a0a0a0;
+}
+
+body {
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: rgba(0,0,0,0.9);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* HERO SLIDER */
+#hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-slider, .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+/* BOTONES */
+.btn-main {
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--blanco);
+    color: var(--negro);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: transparent;
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
+}
+
+/* SECCIONES */
+.section {
+    padding: 80px 10%;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* PRODUCTOS */
+.header-catalogo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#buscador {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 5px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--gris);
+    border: 1px solid #222;
+    padding: 20px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    border-color: #555;
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.price {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.btn-wa-card {
+    background: transparent;
+    border: 1px solid #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.btn-wa-card:hover {
+    background: #25D366;
+    border-color: #25D366;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    z-index: 2000;
+}
+
+.btn-ig {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.7rem;
+    color: var(--texto-gris);
+    border-top: 1px solid #1a1a1a;
+}

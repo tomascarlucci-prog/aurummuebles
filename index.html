@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurum Muebles | Exclusividad en Diseño</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="https://wa.me/5491131456636?text=Hola!%20Vengo%20desde%20la%20web%20y%20quiero%20hacer%20una%20consulta." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header>
+        <div class="logo">Aurum Muebles</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                  <li><a href="#lista-precios">Lista</a></li>
+    <li><a href="#precios-mayoristas">Precios por Mayor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('aurumentrada.jpg');"></div>
+            <div class="slide" style="background-image: url('aurumlogoprincipal.jpg');"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Elegancia en cada detalle</h1>
+            <p>Transformamos espacios con piezas de alta gama y confort absoluto.</p>
+            <a href="#catalogo" class="btn-main">Explorar Colección</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section">
+        <div class="container-flex">
+            <div class="nosotros-text">
+                <h2>Nuestra Historia</h2>
+                <p>Aurum Muebles nació de la visión de fusionar el arte del diseño contemporáneo con la maestría de la carpintería tradicional. Lo que comenzó como un pequeño taller de autor, hoy se erige como un referente de distinción en el mercado mobiliario.</p>
+                <p>Cada una de nuestras piezas es el resultado de un proceso riguroso donde la calidad no es una opción, sino nuestra razón de ser. No vendemos muebles; creamos el escenario donde transcurren tus mejores momentos, garantizando durabilidad y un estilo que trasciende las modas efímeras.</p>
+                <div class="badge">Calidad Premium Garantizada</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="section">
+        <div class="header-catalogo">
+            <h2>Catálogo Exclusivo</h2>
+            <input type="text" id="buscador" placeholder="¿Qué estás buscando? Ej: Sofá Viena...">
+        </div>
+        <div id="grid-productos" class="product-grid">
+            </div>
+    </section>
+
+    <div id="catalogo-aurum">
+    </div>
+    <section class="seccion-aurum">
+        <div style="text-align: center; margin-bottom: 30px;">
+    <h1 class="oro-texto" style="font-size: 1.8em; margin-bottom: 5px;">CATÁLOGO DE TODOS LOS ARTÍCULOS</h1>
+    <p class="oro-texto" style="font-size: 1em; opacity: 0.9;">PRECIO EN TODAS LAS TELAS</p>
+    
+    <div class="contenedor-buscador">
+        <input type="text" id="inputBuscador" onkeyup="buscarProducto()" placeholder="Escribí para buscar (ej: Atenas, Puff, Rinc)...">
+    </div>
+</div>
+
+<div id="catalogo-aurum">
+    <div id="lista-precios" style="text-align: center; margin-bottom: 30px; padding-top: 50px;">
+
+        
+        
+
+           
+        </div>
+    </div>
+    </div>
+    <h2 class="titulo-categoria">Sofás, Poltronas y Rinconeros</h2>
+<div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="sofapoltronasyrinconeras.jpg" alt="Referencia de Sofás" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+</div>
+</div>
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Polt. Atenas</span> <b class="precio-producto">$768.537,84</b></div>
+        <div class="item-producto"><span class="nombre-producto">Polt. Verona</span> <b class="precio-producto">$602.179,62</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Shangai</span> <b class="precio-producto">$1.868.207,44</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Finlandia</span> <b class="precio-producto">$1.201.792,95</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá City</span> <b class="precio-producto">$1.314.865,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Montpellier - Hypersoft</span> <b class="precio-producto">$1.521.255,53</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Aspen (C/Resortes)</span> <b class="precio-producto">$1.625.801,31</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá ATENAS (C/Resortes)</span> <b class="precio-producto">$1.672.205,09</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Patagonia (C/Resortes)</span> <b class="precio-producto">$1.171.791,90</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Piazza (C/Resortes)</span> <b class="precio-producto">$1.493.680,32</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Prado (C/Resortes)</span> <b class="precio-producto">$1.512.692,67</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Viena (C/Resortes)</span> <b class="precio-producto">$1.390.561,48</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Rinc. Caligula C/Matelasse y Vivos</span> <b class="precio-producto">$4.846.411,80</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Center C/Matelasse y Vivos</span> <b class="precio-producto">$2.654.691,24</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Coral - C/Matelasse</span> <b class="precio-producto">$2.347.624,03</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Coral - C/Matelasse y C/Base Mad</span> <b class="precio-producto">$2.646.874,03</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Coralito - C/Matelasse</span> <b class="precio-producto">$1.909.809,67</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Francia - C/Matelasse y Vivos - C/Base Mad</span> <b class="precio-producto">$2.330.044,57</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Irlanda - C/Resortes y Vivos</span> <b class="precio-producto">$2.446.202,47</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Marcelito C/ Matelasse y Vivos</span> <b class="precio-producto">$2.223.004,34</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Faena</span> <b class="precio-producto">$3.658.119,04</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Dublin</span> <b class="precio-producto">$1.568.002,95</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Ninna</span> <b class="precio-producto">$1.318.930,41</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Atenas</span> <b class="precio-producto">$1.327.544,82</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Atenas C/ Hyper</span> <b class="precio-producto">$1.488.553,17</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Marcelito C/ Resortes</span> <b class="precio-producto">$2.357.226,86</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Marcelito</span> <b class="precio-producto">$1.976.080,10</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Nube Matelasse</span> <b class="precio-producto">$1.983.258,87</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Julian</span> <b class="precio-producto">$2.111.576,61</b></div>
+        <section class="seccion-aurum">
+    <h2 class="titulo-categoria">Sillones y Rinconeros (Línea Extendida)</h2>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Rinc. Londres</span> <b class="precio-producto">$2.528.091,89</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón Tokio</span> <b class="precio-producto">$954.516,29</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Norte</span> <b class="precio-producto">$1.583.018,04</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón Milán</span> <b class="precio-producto">$988.419,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Bali / Vintage</span> <b class="precio-producto">$1.154.215,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón Nantes</span> <b class="precio-producto">$1.110.685,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón Munich</span> <b class="precio-producto">$1.110.685,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón Kansas</span> <b class="precio-producto">$1.110.685,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Toulouse C/Base Madera</span> <b class="precio-producto">$1.490.130,30</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Toulouse</span> <b class="precio-producto">$1.245.010,30</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Cama C/Resortes</span> <b class="precio-producto">$1.340.914,84</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Cama C/Resortes</span> <b class="precio-producto">$2.311.721,44</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón Dubai</span> <b class="precio-producto">$2.354.964,36</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón Gala</span> <b class="precio-producto">$956.035,80</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Puffs y Complementos</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="puffsycomplementos.jpg" alt="Puffs y Complementos" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Puff Bombay - Estructura Hierro</span> <b class="precio-producto">$688.872,64</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Bombay Bajo</span> <b class="precio-producto">$229.065,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Fijo Aprox.</span> <b class="precio-producto">$98.826,50</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Pastilla</span> <b class="precio-producto">$213.876,38</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Cuadrado</span> <b class="precio-producto">$98.826,50</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Rosa</span> <b class="precio-producto">$406.623,85</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Rombos</span> <b class="precio-producto">$417.017,56</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Triangulo</span> <b class="precio-producto">$381.912,75</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Macetero</span> <b class="precio-producto">$91.191,38</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Pandereta</span> <b class="precio-producto">$406.623,85</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Rústico</span> <b class="precio-producto">$401.614,95</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Imperio</span> <b class="precio-producto">$412.503,24</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Norway</span> <b class="precio-producto">$323.069,24</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Cesto</span> <b class="precio-producto">$632.891,24</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Cesto Capitone</span> <b class="precio-producto">$380.621,24</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Cesto Doble</span> <b class="precio-producto">$710.892,24</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Luna</span> <b class="precio-producto">$374.946,23</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Luna Capitone</span> <b class="precio-producto">$418.852,42</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Banqueta</span> <b class="precio-producto">$661.556,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Faena</span> <b class="precio-producto">$509.262,94</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Ringo Capitone</span> <b class="precio-producto">$329.125,54</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Sushi</span> <b class="precio-producto">$267.319,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Sushi Respaldo</span> <b class="precio-producto">$257.519,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Francia</span> <b class="precio-producto">$251.641,81</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Redo</span> <b class="precio-producto">$411.845,85</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Polaca</span> <b class="precio-producto">$145.622,78</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Rellen</span> <b class="precio-producto">$92.441,88</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Estrella Capitone</span> <b class="precio-producto">$480.110,58</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Estrella Matelasse</span> <b class="precio-producto">$425.612,33</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Sillas Premium</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="sillaspremiun.jpg" alt="Sillas Premium" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Silla Ocampo</span> <b class="precio-producto">$206.822,00</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Balton Capitone</span> <b class="precio-producto">$253.790,31</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Capitone</span> <b class="precio-producto">$196.825,88</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Viena</span> <b class="precio-producto">$217.326,11</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Savannah</span> <b class="precio-producto">$246.263,88</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Roble Capitone</span> <b class="precio-producto">$163.882,88</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Taburete</span> <b class="precio-producto">$213.886,11</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Queen</span> <b class="precio-producto">$609.805,10</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Matelasse S/ Cristal</span> <b class="precio-producto">$185.538,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Francesa</span> <b class="precio-producto">$256.801,18</b></div>
+        <section class="seccion-aurum">
+    <h2 class="titulo-categoria">Sofás Cama</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="sofascama.jpg" alt="Sofás Cama" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Sofá Cama x 0.80</span> <b class="precio-producto">$521.849,14</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Cama x 1.00</span> <b class="precio-producto">$763.811,60</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Cama x 1.40</span> <b class="precio-producto">$1.025.171,45</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Cama x 1.50</span> <b class="precio-producto">$1.065.185,45</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Cama x 1.60</span> <b class="precio-producto">$1.251.272,00</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Cama C/Resortes x 0.80</span> <b class="precio-producto">$584.218,65</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Baúles y Pies de Cama</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="baulesypiesdecama.jpg" alt="Baúles y Pies de Cama" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Baúl / Pie de Cama - 1.40</span> <b class="precio-producto">$242.062,28</b></div>
+        <div class="item-producto"><span class="nombre-producto">Baúl / Pie de Cama - 1.60</span> <b class="precio-producto">$251.815,12</b></div>
+        <div class="item-producto"><span class="nombre-producto">Baúl / Pie de Cama - 2.00</span> <b class="precio-producto">$332.179,62</b></div>
+        <div class="item-producto"><span class="nombre-producto">Baúl Botinero - 0.80</span> <b class="precio-producto">$112.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Baúl Botinero - 1.00</span> <b class="precio-producto">$138.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Baúl Botinero - 1.20</span> <b class="precio-producto">$168.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Baúl Botinero - 1.40</span> <b class="precio-producto">$198.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Baúl Botinero - 1.60</span> <b class="precio-producto">$242.618,18</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Línea Infantil y Sillones</h2>
+<div class="separador-foto" style="width: 100%; text-align: center; margin: 25px 0;">
+    <img src="lineainfantilsillones.jpg" alt="Línea Infantil" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Sofá Infantil - 1.00</span> <b class="precio-producto">$120.616,16</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Infantil - 1.20</span> <b class="precio-producto">$147.218,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Infantil - 1.40</span> <b class="precio-producto">$162.246,12</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Infantil - 1.50</span> <b class="precio-producto">$187.518,80</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Infantil - 1.60</span> <b class="precio-producto">$224.618,12</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón de 1 Cpo</span> <b class="precio-producto">$154.686,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón de 2 Cpo</span> <b class="precio-producto">$225.186,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón de 3 Cpo</span> <b class="precio-producto">$262.186,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón de 4 Cpo</span> <b class="precio-producto">$326.186,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sillón Paris</span> <b class="precio-producto">$652.886,18</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Mesas Ratonas, Cubos y Complementos</h2
+        ><div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="mesasratonasycomple.jpg" alt="Mesas Ratonas y Complementos" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Cubo x 0.40</span> <b class="precio-producto">$45.681,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Cubo x 0.50</span> <b class="precio-producto">$52.181,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Cubo x 0.80</span> <b class="precio-producto">$68.181,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Cubo x 1.00</span> <b class="precio-producto">$82.181,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Almohadón Similar - 0.40</span> <b class="precio-producto">$18.961,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Almohadón Similar - 0.50</span> <b class="precio-producto">$22.861,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Almohadón Similar - 0.80</span> <b class="precio-producto">$38.861,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Mesa Ratona - 1.00</span> <b class="precio-producto">$178.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Mesa Ratona - 1.20</span> <b class="precio-producto">$212.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Mesa Ratona - 1.40</span> <b class="precio-producto">$262.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff c/Patas x 0.40</span> <b class="precio-producto">$68.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff c/Patas x 0.50</span> <b class="precio-producto">$78.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff c/Patas x 0.80</span> <b class="precio-producto">$108.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff c/Patas x 1.00</span> <b class="precio-producto">$138.618,18</b></div>
+        <section class="seccion-aurum">
+    <h2 class="titulo-categoria">Rinconeros y Sofás Premium</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="rinconeroysofapremiun.jpg" alt="Rinconeros y Sofá Premium" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Rinc. Faena</span> <b class="precio-producto">$2.223.004,34</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Dublin</span> <b class="precio-producto">$3.658.119,04</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Ninna</span> <b class="precio-producto">$1.568.002,95</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Atenas</span> <b class="precio-producto">$1.318.930,41</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Atenas C/ Hyper</span> <b class="precio-producto">$1.327.544,82</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Marcelito C/ Resortes</span> <b class="precio-producto">$1.488.553,17</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Marcelito</span> <b class="precio-producto">$2.357.226,86</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Nube Matelasse</span> <b class="precio-producto">$1.976.080,10</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Julian</span> <b class="precio-producto">$1.983.258,87</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Londres</span> <b class="precio-producto">$2.624.062,28</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Gervasoni</span> <b class="precio-producto">$1.085.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Nantes</span> <b class="precio-producto">$2.953.518,68</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Kelly</span> <b class="precio-producto">$1.894.218,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Kelly C/Resortes</span> <b class="precio-producto">$1.921.218,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Hassan</span> <b class="precio-producto">$2.238.681,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Hassan C/Resortes</span> <b class="precio-producto">$2.338.681,18</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Poltronas y Sillas de Diseño</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="poltroysilladediseño.jpg" alt="Poltronas y Sillas de Diseño" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Polt. Fija Ramon</span> <b class="precio-producto">$188.818,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Polt. Recliner Baja</span> <b class="precio-producto">$374.818,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Polt. Recliner Alta</span> <b class="precio-producto">$452.818,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Pastilla</span> <b class="precio-producto">$118.475,80</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Cuadrado</span> <b class="precio-producto">$184.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Polt. Goya</span> <b class="precio-producto">$486.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Polt. Rondo</span> <b class="precio-producto">$414.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Polt. Piamonte</span> <b class="precio-producto">$364.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Polt. Machado</span> <b class="precio-producto">$324.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Ocampo</span> <b class="precio-producto">$194.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Bulnes Capitone</span> <b class="precio-producto">$222.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Laprida</span> <b class="precio-producto">$214.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Vivaldi</span> <b class="precio-producto">$242.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Syannah</span> <b class="precio-producto">$241.218,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Silla Doble Capitone</span> <b class="precio-producto">$262.818,18</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Puffs Botineros y Especiales</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="puffybotinero.jpg" alt="Puff y Botinero" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Puff c/Patas x 1.40</span> <b class="precio-producto">$168.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff c/Patas x 1.60</span> <b class="precio-producto">$186.618,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff c/Patas x 2.00</span> <b class="precio-producto">$228.881,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Botinero C/Patas - 0.80</span> <b class="precio-producto">$128.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Botinero C/Patas - 1.00</span> <b class="precio-producto">$148.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Botinero C/Patas - 1.20</span> <b class="precio-producto">$174.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Botinero C/Patas - 1.40</span> <b class="precio-producto">$208.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Botinero C/Patas - 1.60</span> <b class="precio-producto">$236.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Botinero C/Patas - 2.00</span> <b class="precio-producto">$298.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Mesa Ratona C/Puff - 0.80</span> <b class="precio-producto">$168.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Mesa Ratona C/Puff - 1.00</span> <b class="precio-producto">$194.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Cama 1 Plaza - 0.80</span> <b class="precio-producto">$184.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Cama 1 Plaza - 1.00</span> <b class="precio-producto">$218.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Redondo C/Patas - 0.40</span> <b class="precio-producto">$84.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Redondo C/Patas - 0.50</span> <b class="precio-producto">$96.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Redondo C/Patas - 0.80</span> <b class="precio-producto">$134.886,18</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Redondo C/Patas - 1.00</span> <b class="precio-producto">$158.886,18</b></div>
+    <section class="seccion-aurum">
+    <h2 class="titulo-categoria">Sofás por Medida</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="sofaamedi.jpg" alt="Sofás a Medida" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Sofá Gervasoni - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Gervasoni - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Gervasoni - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Gervasoni - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Chesterfield - 1.60</span> <b class="precio-producto">$1.255.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Chesterfield - 1.80</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Chesterfield - 2.00</span> <b class="precio-producto">$1.459.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Chesterfield - 2.20</span> <b class="precio-producto">$1.559.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Coral - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Coral - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Coral - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Coral - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Escandinavo - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Escandinavo - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Escandinavo - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Escandinavo - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Julian - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Julian - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Julian - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Julian - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Manchester - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Manchester - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Manchester - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Manchester - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Brooklyn - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Brooklyn - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Brooklyn - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Brooklyn - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Viena / Napoles - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Viena / Napoles - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Viena / Napoles - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Viena / Napoles - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Prada - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Prada - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Prada - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Prada - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Paris - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Paris - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Paris - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Paris - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Sofá Acero - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Acero - 1.80</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Acero - 2.00</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Acero - 2.20</span> <b class="precio-producto">$1.459.006,20</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Rinconeros Modulares y Especiales</h2>
+    <div class="separador-foto" style="width: 100%; display: flex; justify-content: center; align-items: center; margin: 30px 0; clear: both; text-align: center;">
+    <img src="rincoymodu.jpg" alt="Rinconeros, Modulares y Especiales Aurum" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: block;">
+</div>
+</div>
+</div>
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Rinc. Cubo + Lado Recto</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Cubo C/Chaise longue</span> <b class="precio-producto">$1.259.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Coral Frontal + Lado Recto</span> <b class="precio-producto">$1.255.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Coral + Lado Recto</span> <b class="precio-producto">$1.359.006,20</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Escandinavo</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Philadelphia Lona MDF - 1.60</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Philadelphia Lona MDF - 2.00</span> <b class="precio-producto">$1.305.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Philadelphia Lona MDF - 2.20</span> <b class="precio-producto">$1.455.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Isla Cama</span> <b class="precio-producto">$1.055.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Asturias</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Roma</span> <b class="precio-producto">$1.255.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. New York</span> <b class="precio-producto">$1.355.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Florencia C/ Lado</span> <b class="precio-producto">$1.455.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Nantes</span> <b class="precio-producto">$1.555.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Kelly</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Acero Inoxidable Lado...</span> <b class="precio-producto">$1.255.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Acero + Lado Rec</span> <b class="precio-producto">$1.355.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Milan + Lado Rec</span> <b class="precio-producto">$1.455.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Gante + Lado C/ ...</span> <b class="precio-producto">$1.555.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Manchester + Lado Dec...</span> <b class="precio-producto">$1.655.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. 45</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. C/Apoyabrazos</span> <b class="precio-producto">$1.255.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Celi</span> <b class="precio-producto">$1.355.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Loriel</span> <b class="precio-producto">$1.455.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Paris</span> <b class="precio-producto">$1.555.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Napoles</span> <b class="precio-producto">$1.655.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Viena</span> <b class="precio-producto">$1.755.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Tokio</span> <b class="precio-producto">$1.855.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. 80</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Colgante</span> <b class="precio-producto">$1.255.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Dali</span> <b class="precio-producto">$1.355.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Gala</span> <b class="precio-producto">$1.455.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Escocia</span> <b class="precio-producto">$1.555.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Rinc. Black</span> <b class="precio-producto">$1.655.832,15</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Respaldos de Cama</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 25px 0;">
+    <img src="respaldocama.jpg" alt="Respaldos de Cama" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Resp. Con Tachas - 140 X 120</span> <b class="precio-producto">$247.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Con Tachas - 160 X 120</span> <b class="precio-producto">$269.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Con Tachas - 180 X 120</span> <b class="precio-producto">$289.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Con Tachas - 200 X 120</span> <b class="precio-producto">$309.933,26</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Resp. Liso sin Tachas - 140 X 120</span> <b class="precio-producto">$227.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Liso sin Tachas - 160 X 120</span> <b class="precio-producto">$249.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Liso sin Tachas - 180 X 120</span> <b class="precio-producto">$269.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Liso sin Tachas - 200 X 120</span> <b class="precio-producto">$289.933,26</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Resp. Orejas con Tachas - 140 X 120</span> <b class="precio-producto">$309.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Orejas con Tachas - 160 X 120</span> <b class="precio-producto">$329.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Orejas con Tachas - 180 X 120</span> <b class="precio-producto">$349.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Orejas con Tachas - 200 X 120</span> <b class="precio-producto">$369.933,26</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Resp. Liso Con Tachas - 140 X 120</span> <b class="precio-producto">$237.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Liso Con Tachas - 160 X 120</span> <b class="precio-producto">$259.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Liso Con Tachas - 180 X 120</span> <b class="precio-producto">$279.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Liso Con Tachas - 200 X 120</span> <b class="precio-producto">$299.933,26</b></div>
+        
+        <div class="item-producto"><span class="nombre-producto">Resp. Con Panel Capitone - 140 X 120</span> <b class="precio-producto">$309.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Con Panel Capitone - 160 X 120</span> <b class="precio-producto">$329.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Con Panel Capitone - 180 X 120</span> <b class="precio-producto">$349.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Resp. Con Panel Capitone - 200 X 120</span> <b class="precio-producto">$369.933,26</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Sofás Cama con Mecanismo</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="sofacamaconmeca.jpg" alt="Sofá Cama con Mecanismo" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Sofá Paris + Mecanismo Cama - 140 cm</span> <b class="precio-producto">$1.055.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Laureles + Mecanismo Cama - 140 cm</span> <b class="precio-producto">$1.155.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Atenas + Mecanismo Cama - 140 cm</span> <b class="precio-producto">$1.255.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá 180 + Mecanismo Cama - 140 cm</span> <b class="precio-producto">$1.355.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Dublin 200 + Mecanismo Cama - 140 cm</span> <b class="precio-producto">$1.455.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Paris 220 + Mecanismo Cama - 140 cm</span> <b class="precio-producto">$1.555.832,15</b></div>
+        <div class="item-producto"><span class="nombre-producto">Sofá Milan 220 + Mecanismo Cama - 140 cm</span> <b class="precio-producto">$1.655.832,15</b></div>
+    </div>
+</section>
+
+<section class="seccion-aurum">
+    <h2 class="titulo-categoria">Puffs Premium, Apoya Pies y Accesorios</h2>
+    <div class="separador-foto" style="width: 100%; text-align: center; margin: 20px 0;">
+    <img src="puffapoyayacce.jpg" alt="Puffs Apoyo y Accesorios" 
+         style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: inline-block;">
+</div>
+    
+    <div class="grid-precios">
+        <div class="item-producto"><span class="nombre-producto">Puff Elena Capitone</span> <b class="precio-producto">$177.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Elena</span> <b class="precio-producto">$157.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Capitone Boton</span> <b class="precio-producto">$127.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Isla o Liso</span> <b class="precio-producto">$107.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff de Pelo</span> <b class="precio-producto">$145.942,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Puff Capitone</span> <b class="precio-producto">$279.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Apoya Pie 40 x 40</span> <b class="precio-producto">$129.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Apoya Pie 50 x 50</span> <b class="precio-producto">$149.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Apoya Pie 60 x 60</span> <b class="precio-producto">$169.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Funda 1 CP</span> <b class="precio-producto">$189.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Funda Varios</span> <b class="precio-producto">$199.933,26</b></div>
+        <div class="item-producto"><span class="nombre-producto">Base Sommier</span> <b class="precio-producto">$229.933,26</b></div>
+    </div>
+</section>
+    </div>
+</section>
+    </div>
+</section>
+    </div>
+</section>
+    </div>
+</section>
+<section id="precios-mayoristas" class="seccion-mayorista">
+  
+</section>
+
+    <section id="mayoristas" class="section">
+        <div class="cta-box">
+            <h2>Ventas Mayoristas</h2>
+            <p>¿Tenés un local o un proyecto de interiorismo? Consulta nuestros precios especiales.</p>
+            <a href="https://wa.me/5491131456636?text=Hola!%20Quisiera%20recibir%20el%20catálogo%20de%20precios%20mayoristas." class="btn-main">Consultar ahora</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="grid-contacto">
+            <div class="info">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Blvd. Buenos Aires 161, Monte Grande, Bs. As.</p>
+                <p><i class="fab fa-instagram"></i> @mueblesaurum.ok</p>
+                <a href="https://www.instagram.com/mueblesaurum.ok" target="_blank" class="btn-ig">Ir a Instagram</a>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.9419137452815!2d-58.4687638!3d-34.8074033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd134887b7a1d%3A0xc3f58a36f6d10c0!2sBlvd.%20Buenos%20Aires%20161%2C%20B1842%20Monte%20Grande%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1710000000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aurum Muebles - Desarrollado con Excelencia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
