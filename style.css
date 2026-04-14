@@ -348,4 +348,54 @@ footer {
         font-size: 1.5rem;
         padding: 0 10px;
     }
-    
+    /* SOLUCIÓN FINAL PARA EL SLIDER EN CELULARES */
+@media screen and (max-width: 768px) {
+    /* Ajustamos el contenedor principal del slider */
+    .hero {
+        height: auto !important; /* Deja que la altura la de la imagen */
+        min-height: 200px !important;
+        aspect-ratio: 16 / 9 !important; /* Mantiene la proporción de pantalla ancha */
+        overflow: hidden !important;
+    }
+
+    /* Ajustamos las imágenes para que se vean enteras */
+    .slide img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important; 
+        object-position: center !important; /* Centra la foto para que no se vea solo un rincón */
+    }
+
+    /* Si el texto "ARUM" tapa mucho, lo achicamos y bajamos */
+    .hero-content {
+        padding: 10px !important;
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem !important;
+        margin-bottom: 5px !important;
+    }
+/* --- SOLUCIÓN PARA EL SLIDER DE ARUM EN CELULARES --- */
+@media screen and (max-width: 768px) {
+    /* Esto obliga al contenedor a tener forma de foto y no de pared alta */
+    .hero {
+        height: auto !important; 
+        min-height: 250px !important;
+        aspect-ratio: 16 / 9 !important; 
+        overflow: hidden !important;
+    }
+
+    /* Esto hace que la foto se acomode solita sin zoom exagerado */
+    .slide img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important; 
+        object-position: center !important;
+    }
+
+    /* Ajuste del texto para que no tape toda la imagen */
+    .hero-content h1 {
+        font-size: 1.5rem !important;
+        padding: 0 10px;
+    }
+}
