@@ -353,14 +353,26 @@ footer {
 
     /* El slider con buen tamaño para que no se vea lejos */
     #hero {
-        height: auto !important;
-        min-height: 320px !important;
-        aspect-ratio: 1 / 1 !important;
-        /* AGREGÁ ESTO PARA QUE SE VEA DE LEJOS */
-        background-size: contain !important; 
-        background-position: center !important;
+     #hero {
+        height: auto !important; /* MANTENELO: es la clave */
+        min-height: 450px !important; 
+        aspect-ratio: 3 / 4 !important; 
+        background-size: contain !important;
+        background-position: center 20% !important;
         background-repeat: no-repeat !important;
-        background-color: #000; /* Esto es por si la foto no llena todo el cuadrado, que quede negro el fondo */
+        background-color: #000 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+    }
+
+    #hero h2 {
+        font-size: 1.3rem !important; /* ESTO es lo que hace que entre la palabra GAMA */
+        padding: 0 15px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 10px !important;
+        text-align: center !important;
+    }
     }
     }
 }
