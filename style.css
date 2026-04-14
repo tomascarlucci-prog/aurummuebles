@@ -324,11 +324,40 @@ footer {
 /* AJUSTES PARA CELULARES (FIX OVERLAP)      */
 /* ========================================= */
 @media (max-width: 768px) {
-    /* CAMBIO CLAVE: El menú ya no flota, ahora "ocupa lugar" y empuja la foto */
+    /* El header se ajusta al contenido */
     header {
         position: relative !important; 
+        height: auto !important;
         padding: 15px 5% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
         text-align: center;
+    }
+
+    /* LOS BOTONES: Si no entran, bajan solitos */
+    .nav-links {
+        display: flex !important;
+        flex-wrap: wrap !important; /* <--- ESTO ES LO QUE TE FALTA */
+        justify-content: center !important;
+        gap: 10px !important;
+        margin-top: 10px !important;
+        width: 100% !important;
+        list-style: none;
+    }
+
+    .nav-links a {
+        font-size: 14px !important;
+        white-space: nowrap; 
+    }
+
+    /* El slider con buen tamaño para que no se vea lejos */
+    #hero {
+        height: auto !important;
+        min-height: 320px !important;
+        aspect-ratio: 4 / 3 !important;
+    }
+}
     }
 
     .nav-links {
