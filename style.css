@@ -318,47 +318,45 @@ footer {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 /* ========================================= */
-/* AJUSTES PARA CELULARES             */
+/* AJUSTES PARA CELULARES (FIX OVERLAP)      */
 /* ========================================= */
 @media (max-width: 768px) {
-    /* Menú: para que no se encime */
-    nav ul {
-        flex-wrap: wrap; 
+    /* CAMBIO CLAVE: El menú ya no flota, ahora "ocupa lugar" y empuja la foto */
+    header {
+        position: relative !important; 
+        padding: 15px 5% !important;
+        text-align: center;
+    }
+
+    .nav-links {
         justify-content: center;
+        margin-top: 10px;
         gap: 10px;
-        padding: 10px;
     }
 
-    nav ul li a {
-        font-size: 14px;
-        padding: 5px 8px;
-    }
-
-    /* --- SOLUCIÓN PARA EL SLIDER DE ARUM EN CELULARES --- */
-    /* Obligamos al contenedor a tener forma de foto rectangular */
+    /* Ajustamos el slider para que tenga un poquito más de altura (4:3) */
+    /* El 16:9 quedaba muy "apretado" con tanto texto */
     #hero, .hero {
         height: auto !important; 
-        min-height: 250px !important;
-        aspect-ratio: 16 / 9 !important; 
+        min-height: 350px !important; 
+        aspect-ratio: 4 / 3 !important; 
         overflow: hidden !important;
     }
 
-    /* Acomoda la foto sin zoom exagerado */
     .slide, .slide img, .hero-slider {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important; 
-        object-position: center !important;
     }
 
-    /* Ajuste del texto para que no tape toda la imagen */
+    /* Achicamos un poco el texto para que no se amontone */
     .hero-content {
-        padding: 10px !important;
+        padding: 20px !important;
+        width: 100%;
     }
 
     .hero-content h1 {
-        font-size: 1.5rem !important;
-        padding: 0 10px;
-        margin-bottom: 5px !important;
+        font-size: 1.8rem !important; /* Un poquito más grande que antes pero sin pasarse */
+        line-height: 1.2;
     }
-} /* <-- ESTA ES LA LLAVE DE CIERRE QUE FALTABA, ¡SÚPER IMPORTANTE! */
+}
