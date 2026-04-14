@@ -77,7 +77,7 @@ header {
 
 .slide {
     background-size: cover;
-    background-position: 50% 30% ;
+    background-position: 50% 45% ;
     opacity: 0;
     transition: opacity 2s ease-in-out;
 }
