@@ -356,6 +356,12 @@ footer {
         height: auto !important;
         min-height: 320px !important;
         aspect-ratio: 1 / 1 !important;
+        /* AGREGÁ ESTO PARA QUE SE VEA DE LEJOS */
+        background-size: contain !important; 
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-color: #000; /* Esto es por si la foto no llena todo el cuadrado, que quede negro el fondo */
+    }
     }
 }
     }
