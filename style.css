@@ -317,9 +317,11 @@ footer {
 .item-producto {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-/* AJUSTES PARA CELULARES */
+/* ========================================= */
+/* AJUSTES PARA CELULARES             */
+/* ========================================= */
 @media (max-width: 768px) {
-    /* Menú: para que no se encime, lo ponemos en dos filas o vertical */
+    /* Menú: para que no se encime */
     nav ul {
         flex-wrap: wrap; 
         justify-content: center;
@@ -328,65 +330,21 @@ footer {
     }
 
     nav ul li a {
-        font-size: 14px; /* Achicamos un pelín la letra para que entre mejor */
+        font-size: 14px;
         padding: 5px 8px;
     }
 
-    /* Slider: Ajuste para que las fotos no se deformen en el celu */
-    .hero {
-        height: 40vh; /* Altura más corta para pantallas chicas */
-        min-height: 250px;
-    }
-
-    .slide img {
-        object-fit: cover; /* Recorta la imagen para que llene el espacio sin estirarse */
-        height: 100%;
-    }
-
-    /* Título principal */
-    .hero-content h1 {
-        font-size: 1.5rem;
-        padding: 0 10px;
-    }
-    /* SOLUCIÓN FINAL PARA EL SLIDER EN CELULARES */
-@media screen and (max-width: 768px) {
-    /* Ajustamos el contenedor principal del slider */
-    .hero {
-        height: auto !important; /* Deja que la altura la de la imagen */
-        min-height: 200px !important;
-        aspect-ratio: 16 / 9 !important; /* Mantiene la proporción de pantalla ancha */
-        overflow: hidden !important;
-    }
-
-    /* Ajustamos las imágenes para que se vean enteras */
-    .slide img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important; 
-        object-position: center !important; /* Centra la foto para que no se vea solo un rincón */
-    }
-
-    /* Si el texto "ARUM" tapa mucho, lo achicamos y bajamos */
-    .hero-content {
-        padding: 10px !important;
-    }
-
-    .hero-content h1 {
-        font-size: 1.2rem !important;
-        margin-bottom: 5px !important;
-    }
-/* --- SOLUCIÓN PARA EL SLIDER DE ARUM EN CELULARES --- */
-@media screen and (max-width: 768px) {
-    /* Esto obliga al contenedor a tener forma de foto y no de pared alta */
-    .hero {
+    /* --- SOLUCIÓN PARA EL SLIDER DE ARUM EN CELULARES --- */
+    /* Obligamos al contenedor a tener forma de foto rectangular */
+    #hero, .hero {
         height: auto !important; 
         min-height: 250px !important;
         aspect-ratio: 16 / 9 !important; 
         overflow: hidden !important;
     }
 
-    /* Esto hace que la foto se acomode solita sin zoom exagerado */
-    .slide img {
+    /* Acomoda la foto sin zoom exagerado */
+    .slide, .slide img, .hero-slider {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important; 
@@ -394,8 +352,13 @@ footer {
     }
 
     /* Ajuste del texto para que no tape toda la imagen */
+    .hero-content {
+        padding: 10px !important;
+    }
+
     .hero-content h1 {
         font-size: 1.5rem !important;
         padding: 0 10px;
+        margin-bottom: 5px !important;
     }
-}
+} /* <-- ESTA ES LA LLAVE DE CIERRE QUE FALTABA, ¡SÚPER IMPORTANTE! */
