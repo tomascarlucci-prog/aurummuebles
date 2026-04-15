@@ -324,7 +324,7 @@ footer {
 /* AJUSTES PARA CELULARES (FIX OVERLAP)      */
 /* ========================================= */
 @media (max-width: 768px) {
-    /* El header se ajusta al contenido */
+
     header {
         position: relative !important; 
         height: auto !important;
@@ -333,10 +333,14 @@ footer {
         flex-direction: column !important;
         align-items: center !important;
         text-align: center;
-        .hero-content {
-    text-align: right;
-    width: 100%;
-    padding-right: 20px;
+    }
+
+    .hero-content {
+        text-align: right;
+        width: 100%;
+        padding-right: 20px;
+    }
+
 }
     }
 
