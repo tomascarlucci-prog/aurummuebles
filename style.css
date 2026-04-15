@@ -434,22 +434,53 @@ footer {
         font-size: 1.8rem !important; /* Un poquito más grande que antes pero sin pasarse */
         line-height: 1.2;
     }
-}
-@media (max-width: 768px) {
+}/* =========================================
+   REPARACIÓN DEFINITIVA MENÚ MOBILE
+========================================= */
+@media screen and (max-width: 850px) {
+  /* 1. Liberamos el header para que crezca hacia abajo */
   header {
-    flex-direction: column; /* Pone el logo de Aurum Muebles arriba y los links abajo */
-    padding: 10px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: auto !important;
+    padding: 15px 10px !important;
   }
-  
+
+  /* 2. Le damos espacio al logo para que no se pegue a los botones */
+  header .logo {
+    margin-bottom: 15px !important;
+  }
+
+  /* 3. El contenedor de navegación ocupa todo el ancho */
+  nav {
+    width: 100% !important;
+  }
+
+  /* 4. Forzamos a los botones a que bajen de renglón sí o sí (flex-wrap) */
   .nav-links {
-    display: flex;
-    flex-wrap: wrap; /* ¡Esta es la clave para que no se corten! */
-    justify-content: center;
-    gap: 10px; /* Espacio entre cada botón */
-    padding: 0;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px 15px !important; /* 10px de espacio arriba/abajo, 15px a los lados */
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
   }
-  
+
+  /* 5. Reseteamos los items de la lista */
   .nav-links li {
-    font-size: 14px; /* Achica un poco el texto para que entren mejor */
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 6. Ajustamos el texto para que no se corte por la mitad */
+  .nav-links li a {
+    display: inline-block !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+    padding: 5px !important;
   }
 }
