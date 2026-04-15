@@ -435,3 +435,21 @@ footer {
         line-height: 1.2;
     }
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Pone el logo de Aurum Muebles arriba y los links abajo */
+    padding: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap; /* ¡Esta es la clave para que no se corten! */
+    justify-content: center;
+    gap: 10px; /* Espacio entre cada botón */
+    padding: 0;
+  }
+  
+  .nav-links li {
+    font-size: 14px; /* Achica un poco el texto para que entren mejor */
+  }
+}
