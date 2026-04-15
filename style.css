@@ -324,24 +324,16 @@ footer {
 /* AJUSTES PARA CELULARES (FIX OVERLAP)      */
 /* ========================================= */
 @media (max-width: 768px) {
-
-    header {
-        position: relative !important; 
-        height: auto !important;
-        padding: 15px 5% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center;
-    }
-
-    .hero-content {
-        text-align: left;
-        padding: 0 20px;
-    }
-
-    .hero-content h1 {
-        margin-left: -10px;
+/* El header se ajusta al contenido */
+header {
+position: relative !important;
+height: auto !important;
+padding: 15px 5% !important;
+display: flex !important;
+flex-direction: column !important;
+align-items: center !important;
+text-align: center;
+}
     }
 
 }
