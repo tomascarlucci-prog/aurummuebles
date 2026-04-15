@@ -434,53 +434,51 @@ footer {
         font-size: 1.8rem !important; /* Un poquito más grande que antes pero sin pasarse */
         line-height: 1.2;
     }
-}/* =========================================
-   REPARACIÓN DEFINITIVA MENÚ MOBILE
-========================================= */
-@media screen and (max-width: 850px) {
-  /* 1. Liberamos el header para que crezca hacia abajo */
-  header {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    height: auto !important;
-    padding: 15px 10px !important;
-  }
+}/* REPARACIÓN TOTAL PARA MÓVILES - AURUM MUEBLES */
+@media screen and (max-width: 768px) {
+    /* Evita que la página entera se mueva de costado */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
 
-  /* 2. Le damos espacio al logo para que no se pegue a los botones */
-  header .logo {
-    margin-bottom: 15px !important;
-  }
+    header {
+        display: flex !important;
+        flex-direction: column !important; /* Logo arriba, menú abajo */
+        height: auto !important; /* CLAVE: permite que el header crezca */
+        min-height: 100px !important;
+        padding: 20px 0 !important;
+        position: relative !important;
+    }
 
-  /* 3. El contenedor de navegación ocupa todo el ancho */
-  nav {
-    width: 100% !important;
-  }
+    .logo {
+        margin-bottom: 15px !important;
+        font-size: 1.5rem !important;
+    }
 
-  /* 4. Forzamos a los botones a que bajen de renglón sí o sí (flex-wrap) */
-  .nav-links {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 10px 15px !important; /* 10px de espacio arriba/abajo, 15px a los lados */
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
-  }
+    nav {
+        width: 100% !important;
+    }
 
-  /* 5. Reseteamos los items de la lista */
-  .nav-links li {
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+    .nav-links {
+        display: flex !important;
+        flex-direction: column !important; /* Los links ahora van uno abajo del otro */
+        align-items: center !important;
+        gap: 12px !important; /* Espacio entre cada renglón */
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
 
-  /* 6. Ajustamos el texto para que no se corte por la mitad */
-  .nav-links li a {
-    display: inline-block !important;
-    font-size: 14px !important;
-    white-space: nowrap !important;
-    padding: 5px !important;
-  }
+    .nav-links li {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .nav-links li a {
+        display: block !important;
+        font-size: 16px !important;
+        padding: 8px 0 !important;
+        width: 100% !important;
+    }
 }
