@@ -286,7 +286,27 @@ footer {
 
 /* ========================================= */
 /* ARREGLO PARA CELULARES (RESPONSIVE)       */
-/* ========================================= */
+/* ========================================= *
+/* --- ESTILO GLOBAL DEL BUSCADOR (Para PC y Celu) --- */
+#inputBuscador {
+    background-color: #111 !important;
+    border: 1px solid #d4af37 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 12px 20px !important;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 10px auto;
+}
+
+#inputBuscador:focus {
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5) !important;
+    outline: none;
+}
+
+/* --- TODO LO DE CELULAR JUNTO --- */
 @media screen and (max-width: 768px) {
     header {
         position: relative !important; 
@@ -306,9 +326,19 @@ footer {
     .nav-links a { font-size: 0.7rem; }
 
     #hero {
-        height: auto !important;
-        min-height: 450px;
-        padding-top: 20px;
+        height: 60vh !important;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+    }
+
+    /* EL FIX DEL ZOOM */
+    .slide {
+        background-size: contain !important; /* La foto se achica para entrar entera */
+        background-repeat: no-repeat !important;
+        background-position: center 10% !important; 
     }
 
     .hero-content {
@@ -316,21 +346,17 @@ footer {
         width: 90%;
         background: rgba(0, 0, 0, 0.7);
         margin: 0 auto;
+        z-index: 10;
     }
 
     .hero-content h1 {
-        font-size: 1.6rem !important; /* El secreto es achicar esto */
+        font-size: 1.6rem !important;
         line-height: 1.2;
     }
 
-    .hero-content p {
-        font-size: 0.85rem !important;
-    }
-
-    /* Ajuste para que los productos no se amontonen en el catálogo */
     .item-producto {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
-}
+} /* <--- ESTA ES LA LLAVE QUE CIERRA EL MEDIA, NO TE LA OLVIDES */
