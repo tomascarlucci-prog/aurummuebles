@@ -238,6 +238,9 @@ footer {
     color: var(--texto-gris);
     border-top: 1px solid #1a1a1a;
 }/* Variables de color de Aurum */
+/* ========================================= */
+/* VARIABLES Y ESTILOS DEL CATÁLOGO AURUM    */
+/* ========================================= */
 :root {
     --oro: #d4af37;
     --negro: #000000;
@@ -267,218 +270,67 @@ footer {
     align-items: center;
     padding: 15px;
     margin: 10px 0;
-    border: 1px solid #222; /* Borde sutil por defecto */
+    border: 1px solid #222;
     transition: all 0.3s ease;
 }
 
-/* EFECTO DE REMARQUE (Tipo Menú) */
 .item-producto:hover {
     border-color: var(--oro);
     background-color: var(--gris-oscuro);
     transform: scale(1.01);
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
-.nombre-producto {
-    color: #ffffff;
-    font-weight: 500;
-}
+.nombre-producto { color: #ffffff; font-weight: 500; }
+.precio-producto { color: var(--oro); font-weight: bold; font-size: 1.1em; }
+.oro-texto { color: var(--oro); text-transform: uppercase; letter-spacing: 2px; }
 
-.precio-producto {
-    color: var(--oro);
-    font-weight: bold;
-    font-size: 1.1em;
-}
-.oro-texto {
-    color: var(--oro);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.contenedor-buscador {
-    margin: 20px auto;
-    max-width: 500px;
-    padding: 0 15px;
-}
-
-#inputBuscador {
-    width: 100%;
-    padding: 12px 20px;
-    background-color: var(--gris-oscuro);
-    border: 1px solid var(--oro);
-    color: white;
-    border-radius: 5px;
-    outline: none;
-    font-size: 16px;
-}
-
-#inputBuscador::placeholder {
-    color: #888;
-}
-
-/* Animación para que los productos desaparezcan suavemente */
-.item-producto {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
 /* ========================================= */
-/* AJUSTES PARA CELULARES (FIX OVERLAP)      */
+/* ARREGLO PARA CELULARES (RESPONSIVE)       */
 /* ========================================= */
-@media (max-width: 768px) {
-    /* 1. Hacemos el contenedor un poco más alto para que la foto se aleje */
-    #hero {
-        min-height: 450px !important; 
-        aspect-ratio: 3 / 4 !important; /* Formato vertical de celu */
-        background-size: contain !important;
-        background-position: center 20% !important; /* Sube un poquito la foto */
-    }
-
-    /* 2. ACHICAMOS LA LETRA: El secreto para que diga "Gama" completo */
-    #hero h2 {
-        font-size: 1.3rem !important; /* Letra más chica para que entre la frase */
-        padding: 0 10px !important;
-        line-height: 1.3 !important;
-        max-width: 90% !important;
-        margin: 0 auto 10px auto !important;
-    }
-
-    #hero p {
-        font-size: 0.85rem !important;
-        padding: 0 15px !important;
-    }
-
-    /* Ajustamos el botón para que no tape todo */
-    .btn-explorar {
-        padding: 8px 15px !important;
-        font-size: 12px !important;
-    }
-}
-
-}
-
-    }
-
-}
-    }
-
-    /* LOS BOTONES: Si no entran, bajan solitos */
-    .nav-links {
-        display: flex !important;
-        flex-wrap: wrap !important; /* <--- ESTO ES LO QUE TE FALTA */
-        justify-content: center !important;
-        gap: 10px !important;
-        margin-top: 10px !important;
-        width: 100% !important;
-        list-style: none;
-    }
-
-    .nav-links a {
-        font-size: 14px !important;
-        white-space: nowrap; 
-    }
-
-    /* El slider con buen tamaño para que no se vea lejos */
-   #hero {
-        height: auto !important; /* MANTENELO: es la clave */
-        min-height: 450px !important; 
-        aspect-ratio: 3 / 4 !important; 
-        background-size: contain !important;
-        background-position: center 20% !important;
-        background-repeat: no-repeat !important;
-        background-color: #000 !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: flex-end !important;
-    }
-
-    #hero h2 {
-        font-size: 1.3rem !important; /* ESTO es lo que hace que entre la palabra GAMA */
-        padding: 0 15px !important;
-        line-height: 1.2 !important;
-        margin-bottom: 10px !important;
-        text-align: center !important;
-    }
-    }
-    }
-    }
-}
+@media screen and (max-width: 768px) {
+    header {
+        position: relative !important; 
+        flex-direction: column;
+        padding: 15px 5%;
+        height: auto;
     }
 
     .nav-links {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        margin-top: 10px;
         gap: 10px;
+        margin-top: 10px;
     }
 
-    /* Ajustamos el slider para que tenga un poquito más de altura (4:3) */
-    /* El 16:9 quedaba muy "apretado" con tanto texto */
-    #hero, .hero {
-        height: auto !important; 
-        min-height: 350px !important; 
-        aspect-ratio: 4 / 3 !important; 
-        overflow: hidden !important;
+    .nav-links a { font-size: 0.7rem; }
+
+    #hero {
+        height: auto !important;
+        min-height: 450px;
+        padding-top: 20px;
     }
 
-    .slide, .slide img, .hero-slider {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important; 
-    }
-
-    /* Achicamos un poco el texto para que no se amontone */
     .hero-content {
-        padding: 20px !important;
-        width: 100%;
+        padding: 20px;
+        width: 90%;
+        background: rgba(0, 0, 0, 0.7);
+        margin: 0 auto;
     }
 
     .hero-content h1 {
-        font-size: 1.8rem !important; /* Un poquito más grande que antes pero sin pasarse */
+        font-size: 1.6rem !important; /* El secreto es achicar esto */
         line-height: 1.2;
     }
-}/* REPARACIÓN TOTAL PARA MÓVILES - AURUM MUEBLES */
-@media screen and (max-width: 768px) {
-    /* Evita que la página entera se mueva de costado */
-    html, body {
-        overflow-x: hidden;
-        width: 100%;
+
+    .hero-content p {
+        font-size: 0.85rem !important;
     }
 
-    header {
-        display: flex !important;
-        flex-direction: column !important; /* Logo arriba, menú abajo */
-        height: auto !important; /* CLAVE: permite que el header crezca */
-        min-height: 100px !important;
-        padding: 20px 0 !important;
-        position: relative !important;
-    }
-
-    .logo {
-        margin-bottom: 15px !important;
-        font-size: 1.5rem !important;
-    }
-
-    nav {
-        width: 100% !important;
-    }
-
-    .nav-links {
-        display: flex !important;
-        flex-direction: column !important; /* Los links ahora van uno abajo del otro */
-        align-items: center !important;
-        gap: 12px !important; /* Espacio entre cada renglón */
-        padding: 0 !important;
-        margin: 0 !important;
-        width: 100% !important;
-    }
-
-    .nav-links li {
-        width: 100% !important;
-        text-align: center !important;
-    }
-
-    .nav-links li a {
-        display: block !important;
-        font-size: 16px !important;
-        padding: 8px 0 !important;
-        width: 100% !important;
+    /* Ajuste para que los productos no se amontonen en el catálogo */
+    .item-producto {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 }
